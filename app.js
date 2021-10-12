@@ -21,7 +21,9 @@ const app = new App({
 app.command('/know', async ({ command, ack, say }) => {
   try {
     await ack();
-    await say('I know nothing bruh!');
+    const response = await say('I know nothing bruh!');
+    // console.log(response.ok);
+    return response.ok;
   } catch (error) {
     console.log(`Error ${error}`);
   }
