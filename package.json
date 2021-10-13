@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon app.js",
-    "test": "nyc mocha --timeout 10000"
+    "dev": "nodemon src/app.js",
+     "test": "jest -i --colors --verbose --detectOpenHandles"
   },
   "keywords": [],
   "author": "",
@@ -19,6 +19,7 @@
   },
   "devDependencies": {
     "chai": "*",
+    "jest": "^27.2.5",
     "mocha": "*"
   }
 }
