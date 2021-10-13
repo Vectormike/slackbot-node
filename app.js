@@ -11,10 +11,14 @@ const app = new App({
 });
 
 (async () => {
-  const port = 5000;
+  try {
+    const port = 5000;
 
-  await app.start(process.env.PORT || port);
-  console.log(`Slack Bot is running on port ${port}!`);
+    await app.start(process.env.PORT || port);
+    console.log(`Slack Bot is running on port ${port}!`);
+  } catch (error) {
+    console.log(`Error ${error}`);
+  }
 })();
 
 // Test
