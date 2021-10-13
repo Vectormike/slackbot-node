@@ -22,7 +22,7 @@ app.command('/know', async ({ command, ack, say }) => {
   try {
     await ack();
     const response = await say('I know nothing bruh!');
-    // console.log(response.ok);
+    console.log(response.ok);
     return response.ok;
   } catch (error) {
     console.log(`Error ${error}`);
@@ -53,5 +53,3 @@ app.message('anniversary', async ({ message, say, client }) => {
   });
   console.log(result);
 });
-
-module.exports = app;
