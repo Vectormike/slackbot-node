@@ -44,7 +44,7 @@ app.message('birthday', async ({ message, say, client }) => {
     channel: generalChannellId,
     text: `Happy birthday to you`,
   });
-  console.log(result);
+  console.log(result.ok);
 });
 
 // Send anniversary wish to #general
@@ -55,5 +55,5 @@ app.message('anniversary', async ({ message, say, client }) => {
     channel: generalChannellId,
     text: `Happy work anniversary`,
   });
-  console.log(result);
+  console.log(result.ok);
 });

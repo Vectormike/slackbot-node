@@ -5,12 +5,13 @@
   "main": "index.js",
   "scripts": {
     "dev": "nodemon src/app.js",
-     "test": "jest -i --colors --verbose --detectOpenHandles"
+    "test": "jest -i --colors --verbose --detectOpenHandles"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@slack-wrench/jest-bolt-receiver": "^3.0.0",
     "@slack/bolt": "^3.7.0",
     "@slack/logger": "^3.0.0",
     "dotenv": "^10.0.0",
